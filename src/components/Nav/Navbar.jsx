@@ -23,16 +23,8 @@ export default function Navbar() {
 			route: "about",
 		},
 		{
-			name: languague ? "Herramientas" : "Services",
-			route: "services",
-		},
-		{
 			name: languague ? "Mis Proyectos" : "Projects",
 			route: "projects",
-		},
-		{
-			name: languague ? "Contáctame" : "Contact",
-			route: "contact",
 		},
 	];
 

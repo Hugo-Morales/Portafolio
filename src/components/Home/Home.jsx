@@ -2,7 +2,6 @@ import { useContext } from "react";
 import { contactLinks } from "../../resources/json/data";
 import { ThemeContext } from "../../ThemeProvider";
 import { LanContext } from "../../LanguageProvide";
-import { Link } from "react-scroll";
 import user from "../../resources/img/20210825_194939.jpg";
 
 export default function Home() {
@@ -60,9 +59,7 @@ export default function Home() {
 								className="w-full flex items-center justify-center px-7 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500"
 								download="Hugo Morales CV.pdf"
 							>
-								<Link>
-									{languague ? <>Descargar CV</> : <> Download CV </>}
-								</Link>
+								{languague ? <>Descargar CV</> : <> Download CV </>}
 							</a>
 						</div>
 					</div>
@@ -75,6 +72,7 @@ export default function Home() {
 					</div>
 				</div>
 			</main>
+			<hr />
 		</>
 	);
 }
