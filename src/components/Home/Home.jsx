@@ -57,7 +57,7 @@ export default function Home() {
 							<a
 								href="../../resources/Hugo Morales.pdf"
 								className="w-full flex items-center justify-center px-7 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500"
-								download="Hugo Morales.pdf"
+								download="../../resources/Hugo Morales.pdf"
 							>
 								{languague ? <>Descargar CV</> : <> Download CV </>}
 							</a>
