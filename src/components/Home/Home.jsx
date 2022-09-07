@@ -3,6 +3,7 @@ import { contactLinks } from "../../resources/json/data";
 import { ThemeContext } from "../../ThemeProvider";
 import { LanContext } from "../../LanguageProvide";
 import user from "../../resources/img/20210825_194939.jpg";
+import pdf from "../../resources/Hugo Morales.pdf"
 
 export default function Home() {
 	const theme = useContext(ThemeContext);
@@ -55,9 +56,9 @@ export default function Home() {
 					<div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
 						<div className="mt-3 sm:mt-0 cursor-pointer w-1/2">
 							<a
-								href="../../resources/Hugo Morales.pdf"
+								href={pdf}
 								className="w-full flex items-center justify-center px-7 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500"
-								download="../../resources/Hugo Morales.pdf"
+								download="Hugo Morales.pdf"
 							>
 								{languague ? <>Descargar CV</> : <> Download CV </>}
 							</a>
